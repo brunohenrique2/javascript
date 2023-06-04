@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <label for="ivel">Velocidade</label>
+    <input type="number" name="vel" id="ivel"> Km/h
+    <button id="check">Verificar</button>
+    <div id="res">
+
+    </div>
+
+    <script>
+        var btn = document.getElementById("check")
+        btn.addEventListener('click', check)
+
+        function check() {
+            var vel = document.getElementById("ivel")
+            var res = document.getElementById("res")
+            res.innerHTML = `Sua <strong>velocidade</strong> é de <strong>${vel.value}Km/h</strong>`
+            vel = Number(vel.value)
+
+            if(vel > 80) {
+                console.log("multado por excesso de velocidade")
+                console.log("Dirija com cuidado!")
+            }
+        }
+    </script>
+</body>
+</html>
