@@ -13,8 +13,22 @@
     </header>
     <section>
         <div>
+            <p>
+                <label for="inicio">Inicio:</label>
+                <input type="number" name="inicio" id="inicio">
+            </p>
+            <p>
+                <label for="fim">Fim:</label>
+                <input type="number" name="fim" id="fim">
+            </p>
+            <p>
+                <label for="step">Passo:</label>
+                <input type="number" name="passo" id="passo">
+            </p>
+            <button id="btn-cnt" onclick="contar()">contar</button>
         </div>
-        <div>
+        <div id="res">
+            <p id="msg">Preparando a contagem...</p>
         </div>
     </section>
     <footer>
