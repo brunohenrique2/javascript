@@ -17,6 +17,7 @@ function tabuada(){
             mult = fator1 * i
             let item = document.createElement('option')
             item.text = `${fator1} * ${i} = ${mult}`
+            item.value = 'tab${i}'
             tab.appendChild(item)
         }
     }
