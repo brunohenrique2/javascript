@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Trabalhando com Array</h1>
+    <script>
+        var num = [2, 5, 4, 1, 9, 8, 7, 3]
+        num.push(6)
+        //ordem apenas numeros de 0-9, acima disso ele ordem apartir do primeiro numero
+        num.sort()
+        var pos = num.indexOf(1)
+        console.log(`A nossa variavel é composta por ${num}`)
+
+        if(pos == -1) {
+            console.log('Esse numero não existe!')
+        }else {
+            console.log(`O numero está na posição ${pos}`)
+
+        }
+        
+    </script>
+</body>
+</html>
