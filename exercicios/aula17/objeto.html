@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto</title>
+</head>
+<body>
+    <h1>Usando Objeto</h1>
+
+    <script>
+        var amigo = {
+            nome:'Derik',
+            idade:18,
+            peso:55,
+
+            engordar(p=0) {
+                this.peso += p
+                console.log('engordou!')
+            }
+        }
+        amigo.engordar(10)
+        console.log(`O meu amigo ${amigo.nome} pesa ${amigo.peso}Kg`)
+    </script>
+</body>
+</html>
